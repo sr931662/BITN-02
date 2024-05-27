@@ -24,12 +24,12 @@ app.use(morgan('dev'))
 app.use('/api/v1/auth', require('./routes/userRoutes'))
 
 // Home
-// app.get("/", (req,res)=>{
-//   res.status(200).send({
-//     "success":true,
-//     "msg":"Node Serevr Running"
-//   })
-// })
+app.get("/", (req,res)=>{
+  res.status(200).send({
+    "success":true,
+    "msg":"Node Serevr Running"
+  })
+})
 
 // PORT
 const PORT = process.env.PORT || 8080
