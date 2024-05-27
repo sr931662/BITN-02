@@ -16,7 +16,13 @@ connectDB()
 const app = express()
 
 // middlewares
-app.use(cors())
+app.use(cors(
+    {
+        origin: ['https://bitn.onrender.com'],
+        methods: ['POST', 'GET'],
+        credentials: true
+    }
+))
 app.use(express.json())
 app.use(morgan('dev'))
 
