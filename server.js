@@ -21,7 +21,7 @@ app.use(express.json())
 app.use(morgan('dev'))
 
 // ROUTES
-app.use('/api/v1/auth', require('./routes/userRoutes'))
+app.use('/auth', require('./routes/userRoutes'))
 
 // Home
 app.get("/", (req,res)=>{
