@@ -18,7 +18,7 @@ const app = express()
 // middlewares
 app.use(cors(
     {
-        origin: ['https://bitn.onrender.com/api/v1'],
+        origin: ['https://bitn.onrender.com'],
         methods: ['POST', 'GET'],
         credentials: true
     }
